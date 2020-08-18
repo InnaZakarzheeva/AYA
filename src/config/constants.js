@@ -20,10 +20,8 @@ export const GIFTEDCHAT_BOT = {
   image: '',
 };
 export const EMPTY_MESSAGE = '...';
-export const AYA_API = 'http://15.236.93.75/api/v1'; // 'https://admin.getaya.io/api/v1'
-export const AYA_API_AUTHORIZATION_TOKEN =
-  'd387764f789538aa15a3d36e1024eabc02382f1da8d9c2c422749e96e5caa52df166639c7b107f9ac5097cb25e600e81b93918c6bdd62fd8007f6eb780acd6ba';
-// 'c6b27d0548ba8d6a2bd2c7d3cf4747f63f1311ba322ccaa0866590f2ab5707f429c43d6dc523788670c9ad54de387a4fd313ace7328bc85ff161802a9c63cff9';
+export const AYA_API = 'AYA_API';
+export const AYA_API_AUTHORIZATION_TOKEN ='AYA_API_AUTHORIZATION_TOKEN';
 
 export const HOME_ROUTE_NAME = 'Home';
 export const CHANGE_NAME_ROUTE_NAME = 'ChangeName';
@@ -36,8 +34,8 @@ export const STATUS_UPDATE = 'update';
 
 export const AMPLITUDE_API_KEY = '49336e33318b41f0adf7d13e14acf0d3';
 
-export const BASE_URL = 'https://directline.botframework.com';
-export const SECRET_KEY = 'NoC-URh8jPM.ZmGUoV_wRYbCYJZR_-HgDHJi1fBOkeLQFBXCz9EGgmk';
+export const BASE_URL = 'BASE_URL';
+export const SECRET_KEY = 'SECRET_KEY';
 
 export const EVENT_TYPE = 'event';
 export const MESSAGE_TYPE = 'message';
