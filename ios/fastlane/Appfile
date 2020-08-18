@@ -1,0 +1,8 @@
+app_identifier("com.teamvoy.aya") # The bundle identifier of your app
+apple_id("apple@teamvoy.com") # Your Apple email address
+
+itc_team_id("96629802") # App Store Connect Team ID
+team_id("BEQ42K94DF") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

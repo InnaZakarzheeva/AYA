@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>430431429149-84f286jtj29u43l0udl215amsauqfkqv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.430431429149-84f286jtj29u43l0udl215amsauqfkqv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDaG_4ashr-QFDuw1xkz6NQJKd6GBD00gw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>430431429149</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.teamvoy.aya</string>
+	<key>PROJECT_ID</key>
+	<string>aya-lama</string>
+	<key>STORAGE_BUCKET</key>
+	<string>aya-lama.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:430431429149:ios:81653afc6380fae7cc9cf4</string>
+	<key>DATABASE_URL</key>
+	<string>https://aya-lama.firebaseio.com</string>
+</dict>
+</plist>

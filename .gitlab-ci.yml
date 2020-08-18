@@ -1,0 +1,61 @@
+variables:
+  ANDROID_HOME: "/opt/android-sdk"
+  LOCAL_PATH: "/home/gitlab-runner/projects/aya"
+  OUTPUTS_PATH: android/app/build/outputs/apk
+  PRODUCTION_BUILD: $OUTPUTS_PATH/app-release.apk
+
+before_script:
+  - cp -rf $LOCAL_PATH/.signing android/.signing
+  - cp -rf $LOCAL_PATH/firebase/google-services.json android/app/google-services.json
+  - cp -rf $LOCAL_PATH/firebase/app-dist-key.json android/app-dist-key.json
+  - npm cache clean --force
+  - npm install
+
+after_script:
+  - rm -rf android/.signing
+  - rm -rf android/app/google-services.json
+  - rm -rf android/app-dist-key.json
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  tags:
+    - shell
+  script:
+    - cd android && ./gradlew app:clean app:build -x test
+
+androidUploadDevelopRelease:
+  stage: deploy
+  tags:
+    - shell
+  artifacts:
+    paths:
+      - android/app/build/outputs/apk
+  script:
+    - cd android && ./gradlew app:clean app:assembleDevelopRelease app:appDistributionUploadDevelopRelease
+  when: manual
+
+androidUploadProductionRelease:
+  stage: deploy
+  tags:
+    - shell
+  artifacts:
+    paths:
+      - android/app/build/outputs/apk
+  script:
+    - cd android && ./gradlew app:clean app:assembleProductionRelease app:appDistributionUploadProductionRelease
+  when: manual
+
+androidBundleProductionRelease:
+  stage: deploy
+  tags:
+    - shell
+  artifacts:
+    paths:
+      - android/app/build/outputs/bundle
+  script:
+    - cd android && ./gradlew app:clean app:bundleProductionRelease
+  when: manual
